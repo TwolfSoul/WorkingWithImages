@@ -1,15 +1,15 @@
-PImage alone, wolf;
+PImage woof, wolf;
 
 void setup()
 {
-  size(500, 550);
-  alone = loadImage("alone.jpg");
+  size(600,800);
+  woof = loadImage("woof.jpg");
   wolf = loadImage("mask1.jpg");
-  alone.mask(wolf);
+  woof.mask(wolf);
 }
 
 void draw()
 {
   background(0);
-  image(alone, 0, 0, alone.width/2, alone.height/2);
+  image(woof, 0, 0);
 }
